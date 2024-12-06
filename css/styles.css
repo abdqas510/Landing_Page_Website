@@ -67,26 +67,49 @@ section {
 .navbar__menu ul {
     padding-left: 0;
     margin: 0;
-    text-align: right;
+    text-align: left;
 }
 
 .navbar__menu li {
     display: inline-block;
 }
+/* adding responsive design to the navbar menu */
 
-.navbar__menu .menu__link {
-    display: block;
-    padding: 1em;
-    font-weight: bold;
-    text-decoration: none;
-    color: #000;
+
+    .navbar__menu .menu__link {
+        display: inline-block;        
+        padding-left: 0.5em;
+        padding-bottom: 0.5em;
+        font-weight: bold;
+        text-decoration: none;
+        color: #000;
+    }
+    
+    .navbar__menu .menu__link:hover {
+        background: #333;
+        color: #fff;
+        transition: ease 0.3s all;
+    }
+
+    
+
+@media(min-width:600px){
+
+
+    .navbar__menu .menu__link {
+        display: inline-block;
+        padding: 1em;
+        font-weight: bold;
+        text-decoration: none;
+        color: #000;
+    }   
+    
+
+
 }
 
-.navbar__menu .menu__link:hover {
-    background: #333;
-    color: #fff;
-    transition: ease 0.3s all;
-}
+   
+    
 
 /* Header Styles */
 .page__header {
