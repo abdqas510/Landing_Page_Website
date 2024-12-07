@@ -39,14 +39,15 @@ const allSections = document.body.querySelectorAll('section');
 const AddActiveClass = (section)=>{
     section.classList.add('your-active-class');
     // set a background color for your active class
-    section.setAttribute('style','background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.2) 100%);')
+    section.setAttribute('style','background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.2) 100%);');  
+
 }
 
 // removing the your-active-class
 const removeActiveClass = (section) => {
     section.classList.remove('your-active-class');
     // set the default color by CSS file on your active calss
-    section.setAttribute('style','background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);')
+    section.setAttribute('style','background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);');    
 }
 /**
  * End Helper Functions
@@ -128,7 +129,15 @@ navBarSectionsAnchor.forEach(anchor =>{
     })
 })
 
+// Highlight the active section in the navigation bar
+navBarList.addEventListener('click',(event)=>{
+        // select all the sections in the nav bar
+        const navBarSections = navBarList.querySelectorAll('.menu__link');
+        // loop over them and set them to default [i coded that because i don't want the sections to hold there props after clicking on another section]
+        navBarSections.forEach(navBarSection=>navBarSection.setAttribute('style',"background-color:'';color:''"));
+        // set the clicked section props only 
+        event.target.setAttribute('style','background-color:#333;color:white');
 
-
+})   
 
 
