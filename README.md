@@ -1,9 +1,14 @@
 # Landing Page Project
 
-## Instructions
+# Quickstart/Demo
+using JavaScript to manipulate the DOM , like creating a scrolling affect while clicking on a section on a nav bar
 
-The starter project has some HTML and CSS styling to display a static version of the Landing Page project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+# Installation
+by copying this repo URL , on your git bash , write git clone [repo-URL]
 
-To get started, open `js/app.js` and start building out the app's functionality
+# Usage
+### Landing page is an important term to understand in front end development
+and It's where a visitor "lands" after clicking a link in an email, ad, or other promotional material. Unlike general website pages
 
-For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
+# Development
+Front End Development
